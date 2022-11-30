@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>themepark125</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- External Style Sheets -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button">ThemePark <b>125</b></a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="attractions.html" class="w3-bar-item w3-button">Attractions</a>
+          <a href="events.html" class="w3-bar-item w3-button">Events</a>
+          <a href="hotels.html" class="w3-bar-item w3-button">Hotels</a>
+          <a href="restaurants.html" class="w3-bar-item w3-button">Restaurants</a>
+          <a href="shops.html" class="w3-bar-item w3-button">Shops</a>
+          <a
+            href="booking.html"
+            class="w3-bar-item w3-button w3-padding w3-red w3-opacity-min"
+            ><b>Book Now</b></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width: 1500px"
+      id="home"
+    >
+      <img
+        class="mySlides"
+        src="Website/images/mainpage.jpg"
+        alt="Photo of Themepark 125"
+        width="100%"
+      />
+      <img
+        class="mySlides"
+        src="Website/images/mainpage 2.jpg"
+        alt="Photo of Themepark 125"
+        width="100%"
+      />
+      <img
+        class="mySlides"
+        src="Website/images/mainpage 3.jpg"
+        alt="Photo of Themepark 125"
+        width="100%"
+      />
+      <!-- </div> -->
+
+      <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length) {
+            slideIndex = 1;
+          }
+          x[slideIndex - 1].style.display = "block";
+          setTimeout(carousel, 3500);
+        }
+      </script>
+
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white">
+          <h1 class="w3-xxlarge w3-text-white">
+            <span class="w3-padding w3-black w3-opacity-min"
+              ><b>Catchphrase</b></span
+            >
+            <br />
+            <span class="w3-hide-small w3-text-light-grey"
+              >Smaller Catchphrase</span
+            >
+          </h1>
+        </h1>
+      </div>
+      <p class="w3-padding-16">
+        <button class="w3-button w3-white" onclick="myFunction()">
+          Learn More &RightArrow;
+        </button>
+      </p>
+    </header>
+
+    </p>
+    <script src="" async defer></script>
+  </body>
+</html>
