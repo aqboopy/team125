@@ -10,3 +10,8 @@ p express {
 p prices {
     font-size: 15px;
 }
+
+ p OH {
+    line-height: 0px;
+    font-size: 15px;
+}
