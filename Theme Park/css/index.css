@@ -1,0 +1,103 @@
+/* Conditions for the photoslide */
+
+.photoslide {
+    position: center;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing:4px;
+}
+
+
+ /* Conditions for the navigation bar itself */
+
+.buttons_to_right {
+    float:right;
+    /* display:none; */
+}
+
+.navbartop
+{
+    top:0;
+}
+
+.navbar {
+    box-shadow:0 8px 10px 0 rgba(0,0,0,0.2),0 8px 20px 0 rgba(0,0,0,0.19);
+    width:100%;
+    display:block;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+
+    color:#000;
+    background-color:#fff;
+    letter-spacing:3px; 
+    padding:15px 10px;           /* height of nav bar */
+
+}
+
+/* Conditions for the logo */
+.logo {
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+} 
+
+/* Conditions for the navigation bar buttons */
+.navbuttons {
+    text-align:center;
+
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+
+}
+
+/* Conditions for the booking button */
+.booking_navbuttons {
+    text-align:center;
+
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+    opacity:0.75;
+    color:#000!;
+    background-color:#00bcd4;
+}
+
+/* Text conditions for the mainpage image text in the middle */
+
+.textOnMainpageImage {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+
+    margin-top:16px;
+
+    text-align:center;
+}
+.textcond1 {
+    font-size:36px;
+    color:#fff;
+}
+.textcond2 {
+    padding:8px 16px;
+    color:#fff;
+    background-color:#000;
+    opacity:0.75;
+}
+.textcond3 {
+    color:#f1f1f1;
+}
