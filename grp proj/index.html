@@ -32,49 +32,49 @@
       </div>
     </div>
 
-    <!-- Header -->
-    <header
-      class="w3-display-container w3-content w3-wide"
-      style="max-width: 1500px"
-      id="home"
-    >
-      <img
-        class="mySlides"
-        src="Website/images/mainpage.jpg"
-        alt="Photo of Dash Themepark"
-        width="100%"
-      />
-      <img
-        class="mySlides"
-        src="Website/images/mainpage 2.jpg"
-        alt="Photo of Dash Themepark"
-        width="100%"
-      />
-      <img
-        class="mySlides"
-        src="Website/images/mainpage 3.jpg"
-        alt="Photo of Dash Themepark"
-        width="100%"
-      />
+    <!-- Main Slideshow -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="Website/images/mainpage.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Website/images/mainpage 2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Website/images/mainpage 3.jpg" style="width:100%">
+      </div>
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
       
       <script>
-        var slideIndex = 0;
-        carousel();
-
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > x.length) {
-            slideIndex = 1;
-          }
-          x[slideIndex - 1].style.display = "block";
-          setTimeout(carousel, 3500);
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
         }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+      }
       </script>
+    
 
        <!-- Text on the photoslide -->
        <div class="textOnMainpageImage">
@@ -108,6 +108,7 @@
         <p><prices>Elderly <b>$$$</b></prices><p>
         <br>
         <p style="font-size:10px;">Skip the queues to your favourite rides and attractions with <a href="html/booking.html" class="expressPassButton"><i>Dash Express Pass</i></a></p>
+      
         </div>
       </div>
       
@@ -122,22 +123,113 @@
         </a></button>
         </div>
       </div>
+      <br><br>
 
       <!-- Operating Hours -->
       <div class="operatingHrsCol">
           <div class="operatingHrs">
-            <br><br><br><br><br><br><br>
+            <br><br><br><br><br><br>
             <h4><b>Operating Hours</b></h4>
             <p><OH>Today 11AM - 6PM</OH></p>
           <p class="calendar" style="font-size:10px"><a href="about_us.html" class="calendarimgbutton"><img src="Website/images/calendar.png" alt="View Calendar" style="width:20%"></a>
             <a href="about_us.html" class="calendarbutton"><u>View Calendar</u></a></p>
-            <br>
           </div>
         </div>
-  
-      <br>
-      <br>
+      </div>
       
+      <div class="secondColumns">
+      <!-- Slideshow 1 -->
+      <div class="miniSlideshow1col">
+      <div class="miniSlideshow1" style="min-height:200px">
+        <br>
+      <div class="container">
+        <div class="minislideshow1">
+          <div class="numbertext">1 / 6</div>
+          <img src="Website/images/mini_slideshow1/shops3.jpg" style="width:100%">
+        </div>
+      
+        <div class="minislideshow1">
+          <div class="numbertext">2 / 6</div>
+          <img src="Website/images/mini_slideshow1/food4.jpg" style="width:100%">
+        </div>
+      
+        <div class="minislideshow1">
+          <div class="numbertext">3 / 6</div>
+          <img src="Website/images/mini_slideshow1/hotel2.jpg" style="width:100%">
+        </div>
+          
+        <div class="minislideshow1">
+          <div class="numbertext">4 / 6</div>
+          <img src="Website/images/mini_slideshow1/promo1.jpg" style="width:100%">
+        </div>
+      
+        <div class="minislideshow1">
+          <div class="numbertext">5 / 6</div>
+          <img src="Website/images/mini_slideshow1/food3.jpg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row1">
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/food3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nearby Restaurant">
+    
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/food4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nearby Restaurant">
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/hotel2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nearby Hotel">
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/promo1.jpg" style="width:100%" onclick="currentSlide(4)" alt="CNY Promotion">
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/shops3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nearby Shops">
+          </div>    
+        </div>
+      </div>
+      
+      <script>
+      let minislideIndex1 = 1;
+      showSlides(minislideIndex1);
+      
+      function plusSlides(n) {
+        showSlides(minislideIndex1 += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(minislideIndex1 = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("minislideshow1");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {minislideIndex1 = 1}
+        if (n < 1) {minislideIndex1 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[minislideIndex1-1].style.display = "block";
+        dots[minislideIndex1-1].className += " active";
+        captionText.innerHTML = dots[minislideIndex1-1].alt;
+      }
+      </script>
+      <br>
+        </div>
+      </div>
+     </div>
+
     <script src="" async defer></script>
   </body>
 </html>
