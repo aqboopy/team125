@@ -1,17 +1,192 @@
+/* Navigation bar */
+
+/* Conditions for the navigation bar itself */
+
+.buttons_to_right {
+    float:right;
+    /* display:none; */
+}
+
+.navbartop
+{
+    top:0;
+}
+
+.navbar {
+    box-shadow:0 8px 10px 0 rgba(0,0,0,0.2),0 8px 20px 0 rgba(0,0,0,0.19);
+    width:100%;
+    display:block;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+
+    color:#000;
+    background-color:#fff;
+    letter-spacing:3px; 
+    padding:15px 10px;           /* height of nav bar */
+
+}
+
+/* Conditions for the logo */
+.logo {
+    width:100%;
+    padding:8px 16px;
+    text-align:center;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0;
+    padding:8px 16px;
+    text-decoration: none;
+} 
+
+/* Conditions for the navigation bar buttons */
+.navbuttons {
+    text-align:center;
+
+    padding:8px 16px;
+    text-decoration: none;
+
+}
+.navbuttons:hover {
+    background-color: lightgray;
+}
+
+/* Conditions for the booking button */
+.booking_navbuttons {
+    text-align:center;
+
+    padding:8px 16px;
+    opacity:0.75;
+    color:white;
+    background-color: #F62817;
+    text-decoration: none;
+}
+.booking_navbuttons:hover {
+    background-color: #A70D2A;
+}
+
+/* Text conditions for the mainpage image text in the middle */
+
+.textOnMainpageImage {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+
+    margin-top:16px;
+
+    text-align:center;
+}
+.textcond1 {
+    font-size:36px;
+    color:#fff;
+}
+.textcond2 {
+    padding:8px 16px;
+    color:#fff;
+    background-color:#000;
+    opacity:0.75;
+}
+.textcond3 {
+    color:#f1f1f1;
+}
+
+/* Button for Learn More */
+.learnMore {
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.learnMoreButton:hover {
+    background-color:lightgray;
+    padding: 10px 10px;
+    opacity:0.75;
+}
+
+/* Body */
 p {
     font-size: 10px;
     text-align: center;
-}
-
-p express {
-    font-size: 10px;
 }
 
 p prices {
     font-size: 15px;
 }
 
- p OH {
+
+/* Express Pass */
+.expressPassButton:hover {
+    background-color:lightgray;
+    opacity:0.75;
+}
+
+
+/* Column properties */
+.bodyColumns {
+    padding:0 8px;
+    text-align:center;
+    margin-top:16px;
+}
+
+/* Ticket Price Column */
+.ticketPriceCol {
+    width:33.33333%;
+    float: left;
+}
+
+.ticketPrice {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding:0.01em 16px;
+}
+
+/* Offer and Promotion */
+.offerNPromoCol {
+    width:41.66666%;
+    float:left;
+}
+
+.offerNPromo {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding:0.01em 14px;
+}
+
+/* Operating Hours */
+.operatingHrsCol {
+    width:24.99999%;
+    float:left;
+}
+
+.operatingHrs {
+    padding:0.01em 16px;
+    margin-right:16px;
+}
+
+.calendar {
+    text-align: center;
+} 
+
+.calendarbutton:hover {
+    background-color:lightgray;
+    opacity:0.75;
+}
+
+.calendarimgbutton:hover {
+    background-color:lightgray;
+    opacity:0.75;
+    padding: 11px 1px;
+}
+
+p OH {
     line-height: 0px;
-    font-size: 15px;
+    font-size: 13px;
 }
