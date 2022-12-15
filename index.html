@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dash Theme Park</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- External Style Sheets -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+  
+    <!-- Navbar (sit on top) -->
+    <div class="navbartop">
+      <div class="navbar">
+        <a href="index.html" class="logo"><strong>Dash</strong> ThemePark</a>
+        <div class="buttons_to_right">
+          <a href="attractions.html" class="navbuttons"> Attractions</a>
+          <a href="events.html" class="navbuttons">Events</a>
+          <a href="hotels.html" class="navbuttons"> Hotels</a>
+          <a href="restaurants.html" class="navbuttons"> Restaurants</a>
+          <a href="shops.html" class="navbuttons"> Shops</a>
+          <a href="booking.html" class="booking_navbuttons"
+            >Book Now</a>
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- <div class="nav" id="mynav">
+      <div class="logo">
+          <a href="index.html">
+              <img src="images/logo.jpg" alt="logo">
+          </a>
+      </div>
+
+      <ul class="menu-list">
+          <li><a href="#">Attractions</a></li>
+          <li><a href="#">Directions</a></li>
+          <li><a href="#">Hotel</a></li>
+          <li><a href="getting around.html">Getting Around</a></li>
+      </ul>
+
+      <ul class="buynow">
+        <li><a href="checkout.html">BUY NOW</a></li>
+      </ul>
+
+      <div class="menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+          <div class="line"></div>
+      </div>
+ -->
+
+  </div>
+
+    
+    
+        </div>
+
+    <!-- Main Slideshow -->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="Website/images/mainpage.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Website/images/mainpage 2.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="Website/images/mainpage 3.jpg" style="width:100%">
+      </div>
+      </div>
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3500); // Change image every 2 seconds
+      }
+      </script>
+    
+
+       <!-- Text on the photoslide -->
+       <div class="textOnMainpageImage">
+        <h1 class="textcond1">
+            <h1 class="textcond1">
+                <span class="textcond2">
+                  
+                      <b>Catchphrase</b>
+                </span>
+                <br/>
+                <span class="textcond3">
+                  <b>Smaller Catchphrase</b>
+                </span>
+            </h1>
+        </h1>
+      </div>
+      <div class="learnMore">
+          <a href="about_us.html" class="learnMoreButton"><u>Learn More</u> <!--About Us?--> &RightArrow;
+         </a>
+        </div>
+    </header>
+
+    <div class="bodyColumns">
+      <!-- Ticket Prices -->
+      <div class="ticketPriceCol">
+        <div class="ticketPrice" style="min-height:200px">
+        <h2><b>Ticket Prices</b></h2><br>
+        <i style="font-size:120px"></i>
+        <p><prices>Adults <b>$$$</b></prices></p>
+        <p><prices>Children <b>$$$</b></prices><p>
+        <p><prices>Students <b>$$$</b></prices><p>
+        <p><prices>Elderly <b>$$$</b></prices><p>
+        <br>
+        <p style="font-size:10px;">Skip the queues to your favourite rides and attractions with <a href="html/booking.html" class="expressPassButton"><i>Dash Express Pass</i></a></p>
+      
+        </div>
+      </div>
+      
+      <!-- Offers And Promotions -->
+      <div class="offerNPromoCol"> 
+        <div class="offerNPromo" style="min-height:100px">
+        <h2><b>Offers & Promotions</b></h2><br>
+        <i style="font-size:120px"></i>
+        <p><offers>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium et sem non viverra. Donec nisi metus, pretium non suscipit sit amet, venenatis vitae orci.</offers></p>
+        <br>
+        <p><a href="html/bookinginfo.html" class="learnMoreButton"><u>Learn More</u> &RightArrow; </p>
+        </a></button>
+        </div>
+      </div>
+      <br><br>
+
+      <!-- Operating Hours -->
+      <div class="operatingHrsCol">
+          <div class="operatingHrs">
+            <br><br><br><br><br><br>
+            <h4><b>Operating Hours</b></h4>
+            <p><OH>Today 11AM - 6PM</OH></p>
+          <p class="calendar" style="font-size:10px"><a href="about_us.html" class="calendarimgbutton"><img src="Website/images/calendar.png" alt="View Calendar" style="width:20%"></a>
+            <a href="about_us.html" class="calendarbutton"><u>View Calendar</u></a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="secondColumns">
+      <!-- Slideshow 1 -->
+      <div class="miniSlideshow1col">
+      <div class="miniSlideshow1" style="min-height:200px">
+        <br><br><br><br><br><br><br>
+      <div class="container">
+        <div class="minislideshow1">
+          <div class="numbertext">1 / 6</div>
+          <img src="Website/images/mini_slideshow1/shops3.jpg" style="width:100%">
+        </div>
+      
+        <div class="minislideshow1">
+          <div class="numbertext">2 / 6</div>
+          <img src="Website/images/mini_slideshow1/food4.jpg" style="width:100%">
+        </div>
+      
+        <div class="minislideshow1">
+          <div class="numbertext">3 / 6</div>
+          <img src="Website/images/mini_slideshow1/hotel2.jpg" style="width:100%">
+        </div>
+          
+        <div class="minislideshow1">
+          <div class="numbertext">4 / 6</div>
+          <img src="Website/images/mini_slideshow1/promo1.jpg" style="width:100%">
+        </div>
+      
+        <div class="minislideshow1">
+          <div class="numbertext">5 / 6</div>
+          <img src="Website/images/mini_slideshow1/food3.jpg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row1">
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/food3.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nearby Restaurant">
+    
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/food4.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nearby Restaurant">
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/hotel2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nearby Hotel">
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/promo1.jpg" style="width:100%" onclick="currentSlide(4)" alt="CNY Promotion">
+          </div>
+          <div class="column1">
+            <img class="slide1 cursor" src="Website/images/mini_slideshow1/shops3.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nearby Shops">
+          </div>    
+        </div>
+      </div>
+      
+      <script>
+      let minislideIndex1 = 1;
+      showSlides(minislideIndex1);
+      
+      function plusSlides(n) {
+        showSlides(minislideIndex1 += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(minislideIndex1 = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("minislideshow1");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {minislideIndex1 = 1}
+        if (n < 1) {minislideIndex1 = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[minislideIndex1-1].style.display = "block";
+        dots[minislideIndex1-1].className += " active";
+        captionText.innerHTML = dots[minislideIndex1-1].alt;
+      }
+      </script>
+      <br>
+        </div>
+      </div>
+     </div>
+
+     <!--Map-->
+
+     <div class="map">
+      <div class="mapheading">Find your way to us!</div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7315.591491855454!2d103.81771600331975!3d1.2594362335676024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1955a615a343%3A0x3094037d34e6529f!2sUniversal%20Studios%20Singapore!5e0!3m2!1sen!2ssg!4v1670216783876!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <footer class=" footer">
+    <!--Our footer includes our social media presence some fine print-->
+    <div class="social">
+      <!-- This div contains the social media icons. We used an external icon library to get icons with similar styling -->
+      <h4>Follow us on social media!</h4>
+      <div class="icon-container">
+        <i class="fa fa-facebook-square" style="font-size:24px" aria-hidden="true"></i>
+        <i class="fa fa-instagram" style="font-size:24px" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+      </div>
+    </div>
+
+    
+    <!-- This is just some fine print -->
+    <small class="copyright">Copyright © Dash Theme Park. All Rights Reserved.</small>
+  </footer>
+
+
+
+    <script src="" async defer></script>
+  </body>
+</html>
