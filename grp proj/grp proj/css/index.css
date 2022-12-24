@@ -551,7 +551,7 @@ img {
 }
 
 /* Can use the below for main img catchphrase*/
-/* .mainImg {
+.mainImg {
   position: relative;
   text-align: center;
   color: white;
@@ -561,11 +561,16 @@ img {
   position: absolute;
   top: 50%; 
   left: 50%;
-  transform: translate(-50%, -50%); (not sure about this, can delete if not important)
+  transform: translate(-50%, -50%);
+  font-size: 7vmin;
+  background-color: rgba(0,0,0,.6);
+}
 
 .mainSmallCatch {
   position: absolute;
-  top: 50%; (or vmin for this and the above)
+  top: 62%; 
   left: 50%;
-  transform: translate(-50%, -50%); (not sure about this, can delete if not important)
-} */
+  transform: translate(-50%, -50%);
+  font-size: 3vmin;
+  background-color: rgba(0,0,0,.4); 
+}
