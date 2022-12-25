@@ -11,25 +11,36 @@
     <!-- External Style Sheets -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
   <body>
     <!-- Navbar (sit on top) -->
-    <div class="navbartop">
-      <div class="navbar">
-        <a href="index.html" class="logo"><strong>Dash</strong> ThemePark</a>
-        <div class="buttons_to_right">
-          <a href="attractions.html" class="navbuttons"> Attractions</a>
-          <a href="events.html" class="navbuttons">Events</a>
-          <a href="hotels.html" class="navbuttons"> Hotels</a>
-          <a href="restaurants.html" class="navbuttons"> Restaurants</a>
-          <a href="shops.html" class="navbuttons"> Shops</a>
-          <a href="booking.html" class="booking_navbuttons"
-            >Book Now</a
-          >
-        </div>
-      </div>
+    <div class="navbar" id="navbarfunc">
+      <a href="index.html" class="active"><strong>Dash</strong> ThemePark</a>
+      <a href="booking.html" class="bookingbutton"><strong><b>BOOK NOW</b></strong></a>
+      <a href="events.html">Events</a>
+      <a href="hotels.html"> Hotels</a>
+      <a href="restaurants.html" > Restaurants</a>
+      <a href="shops.html" > Shops</a>
+      <a href="attractions.html"> Attractions</a>
+      
+      
+      <a href="javascript:void(0);" class="icon" onclick="navibar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+
+    <script>
+    function navibar() {
+      var x = document.getElementById("navbarfunc");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
     
         <body>
     
