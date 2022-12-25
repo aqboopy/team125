@@ -5,3 +5,7 @@ Before uploading, check if hv anyone uploaded again recently. If have, then try 
 Changes can be seen by clicking the "..." beside the person's name
 
 Main page: about 90% done, havent done the hover over booking button feature 
+
+Hamburger menu for all pages
+
+use vmin instead of px, % for text so it shrinks according to screen size.
