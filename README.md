@@ -30,4 +30,4 @@ Attractions page: done? dash
 
 -- NOTES --
 
-use vmin instead of px, % for text so it shrinks according to screen size.
+use vmin instead of px, % for text(font-size) so it shrinks according to screen size.
