@@ -1,4 +1,4 @@
-
+/* Navigation bar */
 .navbar {
   overflow: hidden;
   background-color: #fff;
@@ -70,27 +70,14 @@
 
 
 /* MAIN SLIDESHOW */
-.mainPhotoslide {
-  position: relative;
-  letter-spacing: 4px;
-}
-
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: Verdana, sans-serif;
-}
 .mySlides {
   display: none;
-}
-img {
-  vertical-align: middle;
+  width: 100%;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1500px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -105,7 +92,6 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active {
   background-color: #717171;
 }
@@ -115,7 +101,6 @@ img {
   animation-name: fade;
   animation-duration: 1s;
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -135,7 +120,6 @@ img {
   text-align: center;
   text-decoration: none;
   font-size: 9px;
-  letter-spacing: 2px;
 }
 
 .learnMoreButton:hover {
@@ -237,6 +221,21 @@ p OH {
   margin-top: -10px;
   text-align: center;
 }
+
+.google-map{
+  overflow:hidden;
+  padding-bottom:100%;
+  position:relative;
+  height:0;
+}
+
+.google-map iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+} 
 
 /* Contact us */
 .contactUsCol {
@@ -346,13 +345,6 @@ img {
   top: 0;
 }
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
 
 .row1:after {
   content: "";
@@ -475,58 +467,6 @@ img {
 .enquiry-box:hover {
     background-color: lightgray;
     opacity: 0.75;
-  }
-
-
-/* Button for Theme Park Map text */
-.parkMap {
-  background-color: white;
-  border: none;
-  color: black;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 9px;
-  letter-spacing: 2px;
-}
-
-.parkMapButton:hover {
-  background-color: lightgray;
-  padding: 10px 10px;
-  opacity: 0.75;
-}
-
-/* Attraction page main image text */
-.attractionImg {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.att_catch {
-  position: absolute;
-  top: 6vmin ;
-  left: 1vmin;
-  font-size:7vmin;
-  background-color: rgba(0,0,0,.5);
-}
-
-.att_reg {
-  position: absolute;
-  top: 30vmin;
-  right: 40px;
-  font-size: 4vmin;
-  background-color: rgba(0,0,0,.5);
-
-}
-
-.att_learn {
-  position: absolute;
-  top:37vmin;
-  right:23vmin;
-  font-size: 2vmin;
-  color: blue;
-  background-color: rgba(0, 187, 255, 0.5);
 }
 
 /* Can use the below for main img catchphrase*/

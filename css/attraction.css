@@ -1,0 +1,50 @@
+/* Button for Theme Park Map text */
+.parkMap {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.parkMapButton:hover {
+  background-color: lightgray;
+  padding: 10px 10px;
+  opacity: 0.75;
+}
+
+/* Attraction page main image text */
+.attractionImg {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.att_catch {
+  position: absolute;
+  top: 3vmin ;
+  left: 1vmin;
+  font-size:7vmin;
+  background-color: rgba(0,0,0,.5);
+}
+
+.att_reg {
+  position: absolute;
+  top: 20vmin;
+  right: 40px;
+  font-size: 4vmin;
+  background-color: rgba(0,0,0,.5);
+
+}
+
+.att_learn {
+  position: absolute;
+  top:27vmin;
+  right:23vmin;
+  font-size: 2vmin;
+  color: blue;
+  background-color: rgba(0, 187, 255, 0.5);
+}
