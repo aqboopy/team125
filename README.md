@@ -12,7 +12,7 @@ Main page: done, aq
 (the hover over booking button feature(shown in invision) is alittle difficult to do so i decided to just not do it)
 Fixed the navigation bar 
 
-Enquiry page: not done, aq will do
+Enquiry page: not done
 
 About us page: not done
 
