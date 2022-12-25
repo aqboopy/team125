@@ -7,6 +7,7 @@ Changes can be seen by clicking the "..." beside the person's name
 When the files are uploaded, edit this readme text and update the statuses of the website :)
 
 -- WEBSITE STATUSES --
+
 Main page: done, aq
 (the hover over booking button feature(shown in invision) is alittle difficult to do so i decided to just not do it)
 Fixed the navigation bar 
