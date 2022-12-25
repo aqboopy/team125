@@ -11,31 +11,164 @@
     <!-- External Style Sheets -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
 
   <body>
     <!-- Navbar (sit on top) -->
-    <div class="navbartop">
-      <div class="navbar">
-        <a href="index.html" class="logo"><strong>Dash</strong> ThemePark</a>
-        <div class="buttons_to_right">
-          <a href="attractions.html" class="navbuttons"> Attractions</a>
-          <a href="events.html" class="navbuttons">Events</a>
-          <a href="hotels.html" class="navbuttons"> Hotels</a>
-          <a href="restaurants.html" class="navbuttons"> Restaurants</a>
-          <a href="shops.html" class="navbuttons"> Shops</a>
-          <a href="booking.html" class="booking_navbuttons"
-            >Book Now</a
-          >
-        </div>
-      </div>
+    <div class="navbar" id="navbarfunc">
+      <a href="index.html" class="active"><strong>Dash</strong> ThemePark</a>
+      <a href="booking.html" class="bookingbutton"><strong><b>BOOK NOW</b></strong></a>
+      <a href="events.html">Events</a>
+      <a href="hotels.html"> Hotels</a>
+      <a href="restaurants.html" > Restaurants</a>
+      <a href="shops.html" > Shops</a>
+      <a href="attractions.html"> Attractions</a>
+      
+      
+      <a href="javascript:void(0);" class="icon" onclick="navibar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
-</html>
+    <script>
+    function navibar() {
+      var x = document.getElementById("navbarfunc");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
+
+
+<div class="attractionImg">
+  <img src="Website/images/attractionmain.jpg" alt="Attraction_Main_Page" width="100%">
+  <div class="att_catch">Catchphrase</div>
+  <div class="att_reg">Register Your Interest</div>
+  <a class="att_learn" href="about_us.html"><u><i>Learn more -></i></u></a>
+
+</div>
+
+
+
+<center>
+<h1 style="font-weight: bolder; font-size:7vmin" >Attractions</h1>
+</center>
+
+<div class="parkMap">
+  <a href="Website/images/ThemeParkMap.jpg" class="parkMapButton" style="font-size:1.5vmin;"><u>Link to The Theme Park Map</u> &RightArrow;
+  </a>
+</div>
+
+<br/>
+
+
+<!-- mini slideshow -->
+
+<div class="secondColumns">
+  <!--          SLIDESHOW 1           -->
+<div class="miniSlideshow1col">
+<div class="miniSlideshow1" style="min-height:200px">
+<div class="container">
+<div class="minislideshow1">
+<div class="numbertext">1 / 5</div>
+<img src="Website/images/attraction_slideshow/attraction1.jpg" style="width:100%">
+</div>
+
+<div class="minislideshow1">
+<div class="numbertext">2 / 5</div>
+<img src="Website/images/attraction_slideshow/attraction2.jpg" style="width:100%">
+</div>
+
+<div class="minislideshow1">
+<div class="numbertext">3 / 5</div>
+<img src="Website/images/attraction_slideshow/attraction3.jpg" style="width:100%">
+</div>
+
+<div class="minislideshow1">
+<div class="numbertext">4 / 5</div>
+<img src="Website/images/attraction_slideshow/attraction4.jpg" style="width:100%">
+</div>
+
+<div class="minislideshow1">
+<div class="numbertext">5 / 5</div>
+<img src="Website/images/attraction_slideshow/attraction5.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides1(-1)">❮</a>
+<a class="next" onclick="plusSlides1(1)">❯</a>
+
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+
+<div class="row1">
+<div class="column1">
+<img class="slide1 cursor" src="Website/images/attraction_slideshow/attraction1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nearby Restaurant">
+
+</div>
+<div class="column1">
+<img class="slide1 cursor" src="Website/images/attraction_slideshow/attraction2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nearby Restaurant">
+</div>
+<div class="column1">
+<img class="slide1 cursor" src="Website/images/attraction_slideshow/attraction3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nearby Hotel">
+</div>
+<div class="column1">
+<img class="slide1 cursor" src="Website/images/attraction_slideshow/attraction4.jpg" style="width:100%" onclick="currentSlide(4)" alt="CNY Promotion">
+</div>
+<div class="column1">
+<img class="slide1 cursor" src="Website/images/attraction_slideshow/attraction5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nearby Shops">
+</div>    
+</div>
+</div>
+
+<script>
+let minislideIndex1 = 1;
+showSlide1(minislideIndex1);
+
+function plusSlides1(n) {
+showSlide1(minislideIndex1 += n);
+}
+
+function currentSlide(n) {
+showSlide1(minislideIndex1 = n);
+}
+
+function showSlide1(n) {
+let i;
+let slides = document.getElementsByClassName("minislideshow1");
+let dots = document.getElementsByClassName("demo");
+let captionText = document.getElementById("caption");
+if (n > slides.length) {minislideIndex1 = 1}
+if (n < 1) {minislideIndex1 = slides.length}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[minislideIndex1-1].style.display = "block";
+dots[minislideIndex1-1].className += " active";
+captionText.innerHTML = dots[minislideIndex1-1].alt;
+}
+</script>
+<div class="learnMore">
+<a href="about_us.html" class="learnMoreButton"><u>Learn More</u> &RightArrow;
+</a>
+</div>
+<br>
+</div>
+</div>
+</div>
+
+
+<center>
+  <h2 style="font-size: 4vmin;">Description</h2>
+  <p style="font-size: 2vmin;">Lorem ipsum dolor sit amet. Et cupiditate nulla ad dolorum ipsum hic dolore suscipit. Sit ducimus enim sed porro omnis sed excepturi Quis ut perspiciatis illum. Sed nesciunt ipsam aut deserunt ipsa et provident excepturi et saepe neque non blanditiis sunt eum galisum voluptates.
+
+    Ut magnam harum non esse doloribus At rerum sunt sed consequatur commodi non ipsa fugit et debitis ducimus? At impedit fuga eos mollitia corrupti et vitae illum et rerum voluptas.</p>
+  </br>
+  <p style="font-size: 2vmin;">Sed magni doloremque non optio consectetur non nesciunt obcaecati est amet illum et ipsam quam sit debitis dolorem et dolor maiores. Qui odit autem aut facilis velit sit eveniet molestiae sit esse odio. Ut labore repudiandae eum soluta mollitia ut voluptate reiciendis. Eos fugit earum vel consequatur aspernatur quo dolorum quis. Ea magnam voluptatem est dolores maxime.</p>
+</center>
