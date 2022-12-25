@@ -11,43 +11,53 @@
     <!-- External Style Sheets -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
-
   <body>
     <!-- Navbar (sit on top) -->
-    <div class="navbartop">
-      <div class="navbar">
-        <a href="index.html" class="logo"><strong>Dash</strong> ThemePark</a>
-        <div class="buttons_to_right">
-          <a href="attractions.html" class="navbuttons"> Attractions</a>
-          <a href="events.html" class="navbuttons">Events</a>
-          <a href="hotels.html" class="navbuttons"> Hotels</a>
-          <a href="restaurants.html" class="navbuttons"> Restaurants</a>
-          <a href="shops.html" class="navbuttons"> Shops</a>
-          <a href="booking.html" class="booking_navbuttons"
-            >Book Now</a
-          >
-        </div>
-      </div>
+    <div class="navbar" id="navbarfunc">
+      <a href="index.html" class="active"><strong>Dash</strong> ThemePark</a>
+      <a href="booking.html" class="bookingbutton"><strong><b>BOOK NOW</b></strong></a>
+      <a href="events.html">Events</a>
+      <a href="hotels.html"> Hotels</a>
+      <a href="restaurants.html" > Restaurants</a>
+      <a href="shops.html" > Shops</a>
+      <a href="attractions.html"> Attractions</a>
+      
+      
+      <a href="javascript:void(0);" class="icon" onclick="navibar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+
+    <script>
+    function navibar() {
+      var x = document.getElementById("navbarfunc");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
 
     <!-- Main Slideshow -->
     <div class="slideshow-container">
 
       <div class="mySlides fade mainImg">
-        <img src="Website/images/mainpage.jpg" style="width:100%">
+        <img src="Website/images/mainpage.jpg" width=100%>
         <div class="mainCatch">Catchphrase</div>
         <div class="mainSmallCatch">Smaller Catchphrase</div>
       </div>
       
       <div class="mySlides fade mainImg">
-        <img src="Website/images/mainpage 2.jpg" style="width:100%">
+        <img src="Website/images/mainpage 2.jpg" width=100%>
         <div class="mainCatch">Catchphrase</div>
         <div class="mainSmallCatch">Smaller Catchphrase</div>
       </div>
       
       <div class="mySlides fade mainImg">
-        <img src="Website/images/mainpage 3.jpg" style="width:100%">
+        <img src="Website/images/mainpage 3.jpg" width=100%>
         <div class="mainCatch">Catchphrase</div>
         <div class="mainSmallCatch">Smaller Catchphrase</div>
       </div>
@@ -76,24 +86,10 @@
         }
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3500); // Change image every 2 seconds
+        setTimeout(showSlides, 3500); // Change image every 3.5 seconds
       }
       </script>
     
-       <!-- Text on the photoslide -->
-       <!-- <div class="textOnMainpageImage">
-        <h1 class="textcond1">
-            <h1 class="textcond1">
-                <span class="textcond2">
-                    <b>Catchphrase</b>
-                </span>
-                <br/>
-                <span class="textcond3">
-                    Smaller Catchphrase
-                </span>
-            </h1>
-        </h1>
-      </div> -->
 
       <div class="learnMore">
           <a href="about_us.html" class="learnMoreButton"><u>Learn More</u> &RightArrow;
@@ -106,14 +102,13 @@
       <div class="ticketPriceCol">
         <div class="ticketPrice" style="min-height:200px">
         <h2 style="color: #786D5F; font-size:4vmin"><b>Ticket Prices</b></h2><br>
-        <i style="font-size:120px"></i>
         <p><prices>Adults <b>$$$</b></prices></p>
         <p><prices>Children <b>$$$</b></prices><p>
         <p><prices>Students <b>$$$</b></prices><p>
         <p><prices>Elderly <b>$$$</b></prices><p>
-        <br>
+        <br><br>
         <p style="font-size:10px;">Skip the queues to your favourite rides and attractions with <a href="html/booking.html" class="expressPassButton"><i>Dash Express Pass</i></a></p>
-      
+        <br>
         </div>
       </div>
       
@@ -122,13 +117,12 @@
       <div class="offerNPromoCol"> 
         <div class="offerNPromo" style="min-height:100px">
         <h2 style="color: #786D5F; font-size:4vmin"><b>Offers & Promotions</b></h2><br>
-        <i style="font-size:120px"></i>
         <p><offers>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium et sem non viverra. Donec nisi metus, pretium non suscipit sit amet, venenatis vitae orci.</offers></p>
         <br>
         <p><a href="html/bookinginfo.html" class="learnMoreButton"><u>Learn More</u> &RightArrow; </p>
         </a></button>
         </div>
-        <br><br><br><br><br>
+        <br><br><br><br><br><br><br>
       </div>
     
 
