@@ -25,7 +25,7 @@
 
 .att_catch {
   position: absolute;
-  top: 3vmin ;
+  top: 6vmin ;
   left: 1vmin;
   font-size:7vmin;
   background-color: rgba(0,0,0,.5);
@@ -33,8 +33,8 @@
 
 .att_reg {
   position: absolute;
-  top: 20vmin;
-  right: 40px;
+  top: 30vmin;
+  right: 8vmin;
   font-size: 4vmin;
   background-color: rgba(0,0,0,.5);
 
@@ -42,7 +42,7 @@
 
 .att_learn {
   position: absolute;
-  top:27vmin;
+  top:37vmin;
   right:23vmin;
   font-size: 2vmin;
   color: blue;
