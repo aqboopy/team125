@@ -26,7 +26,7 @@ Restaurants page: not done
 
 Shops page: not done
 
-Attractions page: done? dash
+Attractions page: done, dash
 
 -- NOTES --
 
