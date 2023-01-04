@@ -35,11 +35,15 @@
   opacity: 0.75;
   color: #f62817;
   text-align: center;
+  animation-name: booking;
+  animation-duration: 4s;
+  animation-direction: alternate;  
+  animation-iteration-count: infinite;
 }
 
-.navbar a.bookingbutton:hover {
-  background-color: #f62817;
-  color: white;
+@keyframes booking {
+  from {color: #f62817;}
+  to {background-color: #f62817; color:white;}
 }
 
 .navbar .icon {
@@ -69,45 +73,17 @@
 }
 
 
-/* MAIN SLIDESHOW */
-.mySlides {
+/* MAIN IMAGE */
+.bigImg {
   display: none;
   width: 100%;
 }
 
-/* Slideshow container */
-.slideshow-container {
+/* img container */
+.mainImg-container {
   max-width: 100%;
   position: relative;
   margin: auto;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 5px;
-  width: 5px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 
@@ -245,7 +221,6 @@ p OH {
 
 .contactUs {
   padding: 0.01em 10px;
-  /* margin-top: -10px; */
   text-align: center;
 }
 
@@ -265,144 +240,22 @@ p contact {
   text-align: center;
 }
 
-/* MINI SLIDESHOW 1 */
-.miniSlideshow1col {
+/* MINI IMAGES 1 */
+.miniImg1 {
+  padding: 0.01em 8px;
+  position: relative;
   width: 37%;
   float: left;
 }
 
-.miniSlideshow1 {
-  padding: 0.01em 8px;
-}
-
-body {
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.minislideshow1 {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Five columns side by side */
-.column1 {
-  float: left;
-  width: 20%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.slide1 {
-  opacity: 0.6;
-}
-
-.active,
-.slide1:hover {
-  opacity: 1;
-}
 
 /* MINI SLIDESHOW 2 */
-.miniSlideshow2col {
+
+.miniImg2 {
+  padding: 0.01em 8px;
+  position: relative;
   width: 37%;
   float: left;
-  margin-top: 0%;
-}
-
-.miniSlideshow2 {
-  padding: 0.01em 8px;
-}
-
-/* Hide the images by default */
-.minislideshow2 {
-  display: none;
-}
-
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column2 {
-  float: left;
-  width: 16.66666%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.slide2 {
-  opacity: 0.6;
-}
-.active,
-.slide2:hover {
-  opacity: 1;
 }
 
 /* ADVISORY */
@@ -474,14 +327,15 @@ img {
   position: relative;
   text-align: center;
   color: white;
+  z-index: -1;
 }
 
 .mainCatch {
   position: absolute;
-  top: 50%; 
+  top: 40%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 6vmin;
+  font-size: 5vmin;
   /* background-color: rgba(0,0,0,.6); */
   padding: 0.5%;
   color: #fff;
@@ -492,10 +346,10 @@ img {
 
 .mainSmallCatch {
   position: absolute;
-  top: 62%; 
+  top: 52%; 
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3vmin;
+  font-size: 2vmin;
   padding: 0.25%;
   background-color: #000;
   opacity: 0.75;
