@@ -14,7 +14,7 @@ Enquiry page: not included in submission
 
 About us page: not included in submission
 
-Book Now page: to be done, debs
+Book Now page: to be done, debs / penda
 
 Events page: not included in submission
 
@@ -24,7 +24,7 @@ Restaurants page: not included in submission
 
 Shops page: not included in submission
 
-Attractions page: done, dash
+Attractions page: done, dash / sky
 
 -- NOTES --
 
