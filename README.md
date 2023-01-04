@@ -16,7 +16,7 @@ About us page: not included in submission
 
 Book Now page: to be done, debs
 
-Events page: to be done, debs
+Events page: not included in submission
 
 Hotels page: not included in submission
 
