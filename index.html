@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
-    <!-- Navbar (sit on top) -->
+    <!-- Navbar -->
     <div class="navbar" id="navbarfunc">
       <a href="index.html" class="active"><strong>Dash</strong> ThemePark</a>
       <a href="booking.html" class="bookingbutton"><strong><b>BOOK NOW</b></strong></a>
@@ -24,12 +24,10 @@
       <a href="shops.html" > Shops</a>
       <a href="attractions.html"> Attractions</a>
       
-      
       <a href="javascript:void(0);" class="icon" onclick="navibar()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
-
     <script>
     function navibar() {
       var x = document.getElementById("navbarfunc");
@@ -42,54 +40,15 @@
     </script>
 
     <!-- Main Slideshow -->
-    <div class="slideshow-container">
+    <div class="mainImg-container">
 
-      <div class="mySlides fade mainImg">
-        <img src="images/mainpage-html/mainpage/mainpage.jpg" width=100%>
-        <div class="mainCatch">Catchphrase</div>
-        <div class="mainSmallCatch">Smaller Catchphrase</div>
-      </div>
-      
-      <div class="mySlides fade mainImg">
-        <img src="images/mainpage-html/mainpage/mainpage 2.jpg" width=100%>
-        <div class="mainCatch">Catchphrase</div>
-        <div class="mainSmallCatch">Smaller Catchphrase</div>
-      </div>
-      
-      <div class="mySlides fade mainImg">
+      <div class="mainImg">
         <img src="images/mainpage-html/mainpage/mainpage 3.jpg" width=100%>
-        <div class="mainCatch">Catchphrase</div>
-        <div class="mainSmallCatch">Smaller Catchphrase</div>
+        <div class="mainCatch">Dash ThemePark</div>
+        <div class="mainSmallCatch">A place to sit, relax & enjoy!</div>
       </div>
+
       </div>
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-      
-      <script>
-      let slideIndex = 0;
-      showSlides();
-      
-      function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-      }
-      </script>
-    
 
       <div class="learnMore">
           <a href="about_us.html" class="learnMoreButton">Learn More &RightArrow;</a>
@@ -128,7 +87,7 @@
     
 
       <!-- Operating Hours -->
-      <div class="operatingHrsCol" style="color: #49413F">
+      <div class="operatingHrsCol" style="color: #786D5F">
           <div class="operatingHrs">
             <img src="images/mainpage-html/dashchar.png">
             <br>
@@ -143,211 +102,49 @@
       <div class="findwayCol">
         <div class="findway">
           <br><br>
-          <h5 style="color: #49413F; font-size: 2.5vmin;"><b>Find Your Way To Us!</b></h5> 
+          <h5 style="color: #786D5F; font-size: 2.5vmin;"><b>Find Your Way To Us!</b></h5> 
           <div class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.725022061684!2d103.823045!3d1.254167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3094037d34e6529f!2sUniversal%20Studios%20Singapore!5e0!3m2!1sen!2ssg!4v1671980134570!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <br><br>
-        <h4 style="color: #49413F; font-size: 2.5vmin;"><b>Follow us on social media!</b></h4>
-        <p><contact style="font-size: 1.5vmin;"><b>Instagram  </b><a href="https://www.instagram.com/" class="contactbutton">@dashthemepark</a></contact></p>
-        <p><contact style="font-size: 1.5vmin;"><b>TikTok  </b><a href="https://www.tiktok.com/" class="contactbutton">@dashthemepark</a></contact></p>
-        <p><contact style="font-size: 1.5vmin;"><b>Email  </b><a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" class="contactbutton">dashthemepark@gmail.com</a></contact></p>
+        <h4 style="color: #786D5F; font-size: 2.5vmin;"><b>Follow us on social media!</b></h4>
+        <p><contact style="font-size: 1.5vmin; color: #49413F;"><b>Instagram  </b><a href="https://www.instagram.com/" class="contactbutton">@dashthemepark</a></contact></p>
+        <p><contact style="font-size: 1.5vmin; color: #49413F;"><b>TikTok  </b><a href="https://www.tiktok.com/" class="contactbutton">@dashthemepark</a></contact></p>
+        <p><contact style="font-size: 1.5vmin; color: #49413F;"><b>Email  </b><a href="https://mail.google.com/mail/u/0/?ogbl#inbox?compose=new" class="contactbutton">dashthemepark@gmail.com</a></contact></p>
+        <br><br><br><br><br><br>
         </div>
       </div>
 
+      <!-- SECOND ROW COLUMNS -->
+      <div class="secondColumns">
+        <div class="miniImg1" style="min-height:200px">
+            <img src="images/mainpage-html/mini_slideshow1/shops3.jpg" style="width:100%">
+            <br><br>
+            <img src="images/mainpage-html/mini_slideshow1/hotel2.jpg" style="width:100%">
+
+          <div class="learnMore">
+            <a href="about_us.html" class="learnMoreButton"><u>Learn More</u> &RightArrow;
+            </a>
+          </div>
+          <br>
+        </div>
+      </div>
+     </div>
 
       <div class="secondColumns">
-                                        <!--          SLIDESHOW 1           -->
-      <div class="miniSlideshow1col">
-      <div class="miniSlideshow1" style="min-height:200px">
-      <div class="container">
-        <div class="minislideshow1">
-          <div class="numbertext">1 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow1/shops3.jpg" style="width:100%">
-        </div>
-      
-        <div class="minislideshow1">
-          <div class="numbertext">2 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow1/food4.jpg" style="width:100%">
-        </div>
-      
-        <div class="minislideshow1">
-          <div class="numbertext">3 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow1/hotel2.jpg" style="width:100%">
-        </div>
-          
-        <div class="minislideshow1">
-          <div class="numbertext">4 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow1/promo1.jpg" style="width:100%">
-        </div>
-      
-        <div class="minislideshow1">
-          <div class="numbertext">5 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow1/food3.jpg" style="width:100%">
-        </div>
-          
-        <a class="prev" onclick="plusSlides1(-1)">❮</a>
-        <a class="next" onclick="plusSlides1(1)">❯</a>
-      
-      
-        <div class="row1">
-          <div class="column1">
-            <img class="slide1 cursor" src="images/mainpage-html/mini_slideshow1/food3.jpg" style="width:100%" onclick="currentSlide1(1)" alt="Nearby Restaurant">
-    
-          </div>
-          <div class="column1">
-            <img class="slide1 cursor" src="images/mainpage-html/mini_slideshow1/food4.jpg" style="width:100%" onclick="currentSlide1(2)" alt="Nearby Restaurant">
-          </div>
-          <div class="column1">
-            <img class="slide1 cursor" src="images/mainpage-html/mini_slideshow1/hotel2.jpg" style="width:100%" onclick="currentSlide1(3)" alt="Nearby Hotel">
-          </div>
-          <div class="column1">
-            <img class="slide1 cursor" src="images/mainpage-html/mini_slideshow1/promo1.jpg" style="width:100%" onclick="currentSlide1(4)" alt="CNY Promotion">
-          </div>
-          <div class="column1">
-            <img class="slide1 cursor" src="images/mainpage-html/mini_slideshow1/shops3.jpg" style="width:100%" onclick="currentSlide1(5)" alt="Nearby Shops">
-          </div>    
-        </div>
-      </div>
-      
-      <script>
-      let minislideIndex1 = 1;
-      showSlide1(minislideIndex1);
-      
-      function plusSlides1(n) {
-        showSlide1(minislideIndex1 += n);
-      }
-      
-      function currentSlide1(n) {
-        showSlide1(minislideIndex1 = n);
-      }
-      
-      function showSlide1(n) {
-        let i;
-        let slides = document.getElementsByClassName("minislideshow1");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {minislideIndex1 = 1}
-        if (n < 1) {minislideIndex1 = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[minislideIndex1-1].style.display = "block";
-        dots[minislideIndex1-1].className += " active";
-        captionText.innerHTML = dots[minislideIndex1-1].alt;
-      }
-      </script>
-        <div class="learnMore">
-          <a href="about_us.html" class="learnMoreButton"><u>Learn More</u> &RightArrow;
-          </a>
-        </div>
-      <br>
-        </div>
-      </div>
-     </div>
-
-                                  <!--             SLIDESHOW 2               -->
-     <div class="miniSlideshow2col">
-      <div class="miniSlideshow2" style="min-height:200px">
-      <div class="container">
-        <div class="minislideshow2">
-          <div class="numbertext">1 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow2/food1.jpg" style="width:100%">
-        </div>
-      
-        <div class="minislideshow2">
-          <div class="numbertext">2 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow2/food2.jpg" style="width:100%">
-        </div>
-      
-        <div class="minislideshow2">
-          <div class="numbertext">3 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow2/hotel1.jpg" style="width:100%">
-        </div>
-          
-        <div class="minislideshow2">
-          <div class="numbertext">4 / 6</div>
+        <div class="miniImg2" style="min-height:200px">
           <img src="images/mainpage-html/mini_slideshow2/promo2.jpg" style="width:100%">
-        </div>
+          <br><br>
+          <img src="images/mainpage-html/mini_slideshow2/food2.jpg" style="width:100%">
       
-        <div class="minislideshow2">
-          <div class="numbertext">5 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow2/shops1.jpg" style="width:100%">
-        </div>
-
-        <div class="minislideshow2">
-          <div class="numbertext">6 / 6</div>
-          <img src="images/mainpage-html/mini_slideshow2/shops2.jpg" style="width:100%">
-        </div>
-          
-        <a class="prev" onclick="plusSlides2(-1)">❮</a>
-        <a class="next" onclick="plusSlides2(1)">❯</a>
-    
-      
-        <div class="row2">
-          <div class="column2">
-            <img class="slide2 cursor" src="images/mainpage-html/mini_slideshow2/food1.jpg" style="width:100%" onclick="currentSlide2(1)" alt="Nearby Restaurant">
-    
+        
+          <div class="learnMore">
+            <a href="about_us.html" class="learnMoreButton"><u>Learn More</u> &RightArrow;
+            </a>
           </div>
-          <div class="column2">
-            <img class="slide2 cursor" src="images/mainpage-html/mini_slideshow2/food2.jpg" style="width:100%" onclick="currentSlide2(2)" alt="Nearby Restaurant">
+          <br>
           </div>
-          <div class="column2">
-            <img class="slide2 cursor" src="images/mainpage-html/mini_slideshow2/hotel1.jpg" style="width:100%" onclick="currentSlide2(3)" alt="Nearby Hotel">
-          </div>
-          <div class="column2">
-            <img class="slide2 cursor" src="images/mainpage-html/mini_slideshow2/promo2.jpg" style="width:100%" onclick="currentSlide2(4)" alt="New Years Promotion">
-          </div>
-          <div class="column2">
-            <img class="slide2 cursor" src="images/mainpage-html/mini_slideshow2/shops1.jpg" style="width:100%" onclick="currentSlide2(5)" alt="Nearby Shops">
-          </div>  
-          <div class="column2">
-            <img class="slide2 cursor" src="images/mainpage-html/mini_slideshow2/shops2.jpg" style="width:100%" onclick="currentSlide2(4)" alt="Nearby Shops">
-          </div>  
         </div>
-      </div>
-      
-      <script>
-      let minislideIndex2 = 1;
-      showSlide2(minislideIndex2);
-      
-      function plusSlides2(n) {
-        showSlide2(minislideIndex2 += n);
-      }
-      
-      function currentSlide2(n) {
-        showSlide2(minislideIndex2 = n);
-      }
-      
-      function showSlide2(n) {
-        let i;
-        let slides = document.getElementsByClassName("minislideshow2");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {minislideIndex2 = 1}
-        if (n < 1) {minislideIndex2 = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[minislideIndex2-1].style.display = "block";
-        dots[minislideIndex2-1].className += " active";
-        captionText.innerHTML = dots[minislideIndex2-1].alt;
-      }
-      </script>
-
-      <div class="learnMore">
-        <a href="about_us.html" class="learnMoreButton"><u>Learn More</u> &RightArrow;
-        </a>
-      </div>
-
-      <br>
-        </div>
-      </div>
      </div>
+
 
      <!-- ADVISORY -->
      <div class="advisoryCol">
