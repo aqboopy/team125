@@ -9,22 +9,20 @@ When the files are uploaded, edit this readme text and update the statuses of th
 -- WEBSITE STATUSES --
 
 Main page: done, aq
-(the hover over booking button feature(shown in invision) is alittle difficult to do so i decided to just not do it)
-Fixed the navigation bar 
 
-Enquiry page: not done
+Enquiry page: not included in submission
 
-About us page: not done
+About us page: not included in submission
 
-Book Now page: partially(?) done, debs
+Book Now page: to be done, debs
 
-Events page: partially(?) done, debs
+Events page: to be done, debs
 
-Hotels page: not done
+Hotels page: not included in submission
 
-Restaurants page: not done
+Restaurants page: not included in submission
 
-Shops page: not done
+Shops page: not included in submission
 
 Attractions page: done, dash
 
