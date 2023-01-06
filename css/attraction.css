@@ -48,3 +48,12 @@
   color: blue;
   background-color: rgba(0, 187, 255, 0.5);
 }
+
+.attractions_container {
+  display: grid;
+  row-gap: 100px;
+  grid: 40%/ auto auto auto auto;
+  grid-template-rows:auto auto;
+  align-items: center;
+  justify-content: center;
+}
