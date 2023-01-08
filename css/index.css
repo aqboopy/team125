@@ -213,26 +213,6 @@ p OH {
   position:absolute;
 } 
 
-/* Contact us */
-.contactUsCol {
-  width: 24.99999%;
-  float: right;
-}
-
-.contactUs {
-  padding: 0.01em 10px;
-  text-align: center;
-}
-
-.contactbutton:hover {
-  background-color: lightgray;
-  opacity: 0.75;
-  text-decoration: none;
-}
-
-p contact {
-  font-size: 11px;
-}
 
 /* Second row column properties */
 .secondColumns {
