@@ -48,7 +48,6 @@ p OH {
 
 .google-map {
   overflow: hidden;
-  padding-bottom: 100%;
   position: relative;
   height: 0;
 }
@@ -63,7 +62,7 @@ p OH {
 
 /* Social Media */
 .socialMedCol {
-  float: left;
+  float: right;
   width: 20%;
 }
 
